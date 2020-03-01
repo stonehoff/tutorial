@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('bertingkat', 'TutorialController');
+
+
+
+Route::post('getKelurahan', ['as'=>'getKelurahan','uses'=>'TutorialController@getKelurahan']);
